@@ -6,7 +6,7 @@ button.addEventListener("click",()=>{
     let url=`https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
 fetch(url)
 .then((response)=>{
-    if(!response.ok){
+    if(!response.ok){decodeURIComponent
         throw new Error( "Sorry it was some error");
     }
     else{
